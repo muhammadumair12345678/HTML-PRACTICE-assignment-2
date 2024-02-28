@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Style for the form container */
+    .form-container {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for the form labels and inputs */
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Style for the list items */
+    ul, ol {
+      margin-bottom: 20px;
+    }
+
+    /* Style for the table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- First Section -->
+  <section>
+    <h2>List Types and Table</h2>
+
+    <!-- Unordered List -->
+    <ul>
+      <li>pakistan</li>
+      <li>afghanistan</li>
+      <li>turkish</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol>
+      <li>aussie</li>
+      <li>Kiwis</li>
+      <li>kangaroo</li>
+    </ol>
+
+    <!-- Definition List -->
+    <dl>
+      <dt>Term 1</dt>
+      <dd>Definition 1</dd>
+      <dt>Term 2</dt>
+      <dd>Definition 2</dd>
+    </dl>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>JavaScript</th>
+          <th>Java</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ruby</td>
+          <td>swift</td>
+        </tr>
+        <tr>
+          <td>SOP</td>
+          <td>POS</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Second Section -->
+  <section>
+    <h2>Form </h2>
+
+    <!-- Form Container with Styling -->
+    <div class="form-container">
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
